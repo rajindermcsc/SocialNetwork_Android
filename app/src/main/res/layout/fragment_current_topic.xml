@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.currentTopic.CurrentTopicFragment">
+    <include layout="@layout/ic_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/most_mentioned"
+            android:textColor="@color/black_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_green_check"
+            android:drawablePadding="@dimen/_8sdp"
+            android:text="Papillon"
+            android:textColor="@color/black_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_green_check"
+            android:drawablePadding="@dimen/_8sdp"
+            android:text="Coronavirus"
+            android:textColor="@color/black_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableLeft="@drawable/ic_green_check"
+        android:drawablePadding="@dimen/_8sdp"
+        android:text="topics in France"
+        android:textColor="@color/black_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/view_color" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_current_topic"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:textColor="@color/black_color"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rvPosts"
+        app:layout_constraintStart_toStartOf="@+id/rvPosts"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loader_current_topic"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/black_color"
+        app:indicatorName="BallTrianglePathIndicator" />
+
+</RelativeLayout>

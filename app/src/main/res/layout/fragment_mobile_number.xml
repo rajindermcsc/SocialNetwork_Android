@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".ui.landing.LandingFragment"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_whats_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textAlignment="center"
+        android:text="@string/enter_your_mobile_number"
+        android:textColor="@color/black_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+       <androidx.appcompat.widget.AppCompatImageView
+           android:id="@+id/img_logo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:src="@drawable/yellow_2"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_whats_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="@string/mobile_number"
+        android:textColor="@color/black_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:elevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_name">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="@dimen/_15sdp"
+            android:singleLine="true"
+            android:textColor="@color/black_color"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_verification_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/verification_code_sent"
+        android:textColor="@color/black_color"
+        android:textSize="20sp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_first_name" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_mobile_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_120sdp"
+        android:background="@drawable/rounded_yellow"
+        android:gravity="center"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:text="@string/continues"
+        android:textColor="@color/black_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verification_code" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loader_mobile"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/black_color"
+        app:indicatorName="BallTrianglePathIndicator" />
+</RelativeLayout>

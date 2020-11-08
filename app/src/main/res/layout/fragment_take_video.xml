@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".ui.landing.LandingFragment"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.landing.LandingFragment">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_whats_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:gravity="center"
+                android:text="@string/opinion_optional"
+                android:textColor="@color/black_color"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_whats_name" />
+
+
+            <RelativeLayout
+                android:id="@+id/tv_take_video_kyt"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/green_circle_with_stroke"
+                app:layout_constraintBottom_toTopOf="@+id/tv_comment_on_topic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_40sdp"
+                    android:text="@string/take_a_video"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/select_video_lyt"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/img_logo"
+                app:layout_constraintBottom_toTopOf="@+id/tv_comment_on_topic"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/rounded_corner_upload"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <com.websoftq.socialnetwork.utils.ResizableImageView
+                    android:id="@+id/img_topic"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_back_button"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/img_video_icon"
+                    android:src="@drawable/back_button" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_video_icon"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_video" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_comment_on_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="or comment on your topic"
+                android:textAlignment="center"
+                android:textColor="@color/black_color"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/tv_validate_code"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_validate_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:background="@drawable/rounded_green_2"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/validate"
+                android:textColor="@color/white_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/video_loader"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/black_color"
+        app:indicatorName="BallTrianglePathIndicator" />
+</RelativeLayout>
+
+
+

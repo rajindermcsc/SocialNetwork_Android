@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.websoftq.socialnetwork.ui.landing.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing">
+        <action
+            android:id="@+id/action_landingFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_connectionFragment"
+            app:destination="@id/connectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.websoftq.socialnetwork.ui.signup.NameFragment"
+        android:label="name_fragment"
+        tools:layout="@layout/name_fragment">
+        <action
+            android:id="@+id/action_nameFragment_to_birthdayFragment"
+            app:destination="@id/birthdayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdayFragment"
+        android:name="com.websoftq.socialnetwork.ui.signup.BirthdayFragment"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_birthday">
+
+        <argument
+            android:name="@string/user_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/first_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="@string/last_name"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_birthdayFragment_to_yourSchoolFragment"
+            app:destination="@id/yourSchoolFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.websoftq.socialnetwork.ui.signup.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password">
+
+        <argument
+            android:name="@string/user_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/first_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="@string/last_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/date_of_birthaday"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/school_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/add_pictures"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="@string/description"
+            app:argType="string"
+            android:defaultValue=""/>
+
+
+
+        <action
+            android:id="@+id/action_passwordFragment_to_mobileNumberFragment"
+            app:destination="@id/mobileNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobileNumberFragment"
+        android:name="com.websoftq.socialnetwork.ui.verifyMobile.MobileNumberFragment"
+        android:label="fragment_mobile_number"
+        tools:layout="@layout/fragment_mobile_number">
+
+
+        <argument
+            android:name="@string/user_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/first_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="@string/last_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/date_of_birthaday"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/school_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/add_pictures"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="@string/description"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="@string/password"
+            app:argType="string"
+            android:defaultValue=""/>
+        <action
+            android:id="@+id/action_mobileNumberFragment_to_verifiactionCodeFragment"
+            app:destination="@id/verifiactionCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifiactionCodeFragment"
+        android:name="com.websoftq.socialnetwork.ui.verifyMobile.VerifiactionCodeFragment"
+        android:label="fragment_verifiaction_code"
+        tools:layout="@layout/fragment_verifiaction_code">
+
+        <argument
+            android:name="@string/user_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/first_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="@string/last_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/date_of_birthaday"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/school_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/add_pictures"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="@string/description"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <argument
+            android:name="@string/password"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/mobile_number"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/verification_code"
+            app:argType="string"
+            android:defaultValue=""/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/connectionFragment"
+        android:name="com.websoftq.socialnetwork.ui.login.ConnectionFragment"
+        android:label="fragment_connection"
+        tools:layout="@layout/fragment_connection" />
+    <fragment
+        android:id="@+id/yourSchoolFragment"
+        android:name="com.websoftq.socialnetwork.ui.signup.YourSchoolFragment"
+        android:label="fragment_your_school"
+        tools:layout="@layout/fragment_your_school">
+
+        <argument
+            android:name="@string/user_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/first_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="@string/last_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/date_of_birthaday"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_yourSchoolFragment_to_addPictures"
+            app:destination="@id/addPictures" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.websoftq.socialnetwork.ui.signup.DescriptionFragment"
+        android:label="fragment_description"
+        tools:layout="@layout/fragment_description">
+
+        <argument
+            android:name="@string/user_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/first_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="@string/last_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/date_of_birthaday"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/school_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/add_pictures"
+            app:argType="string"
+            android:defaultValue=""/>
+
+        <action
+            android:id="@+id/action_descriptionFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPictures"
+        android:name="com.websoftq.socialnetwork.ui.signup.AddPictures"
+        android:label="fragment_add_pictures"
+        tools:layout="@layout/fragment_add_pictures">
+
+        <argument
+            android:name="@string/user_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/first_name"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="@string/last_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/date_of_birthaday"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="@string/school_name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <action
+            android:id="@+id/action_addPictures_to_descriptionFragment"
+            app:destination="@id/descriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.websoftq.socialnetwork.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_landingFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/landingFragment" />
+    </fragment>
+</navigation>

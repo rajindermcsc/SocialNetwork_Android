@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/destination_community"
+        android:icon="@drawable/community_selector"
+        android:title="@string/community" />
+
+    <item
+        android:id="@+id/destination_chat"
+        android:icon="@drawable/chat_menu_selector"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/destination_activities"
+        android:icon="@drawable/activites_selector"
+        android:title="@string/activities" />
+
+    <item
+        android:id="@+id/destination_services"
+        android:icon="@drawable/service_selector"
+        android:title="@string/service" />
+
+    <item
+        android:id="@+id/destination_tutorials"
+        android:icon="@drawable/tutorial_selector"
+        android:title="@string/tutorials" />
+</menu>

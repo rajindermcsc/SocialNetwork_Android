@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.landing.LandingFragment">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_whats_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="@string/add_pictures"
+        android:textColor="@color/black_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/yellow_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_whats_name" />
+
+
+    <RelativeLayout
+        android:id="@+id/main_img_lyt"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img1"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_110sdp"
+                app:placeholderImage="@color/white_color"
+                app:roundedCornerRadius="@dimen/_20sdp"
+                app:roundingBorderColor="@color/black_color"
+                app:roundingBorderWidth="2px" />
+
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/add_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_remove1"
+            android:layout_width="@dimen/_30sdp"
+            android:visibility="gone"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/ic_cancel" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linr_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_img_lyt">
+
+        <FrameLayout
+            android:id="@+id/img_lyt_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_whats_name">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img2"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:placeholderImage="@color/white_color"
+                app:roundedCornerRadius="@dimen/_20sdp"
+                app:roundingBorderColor="@color/black_color"
+                app:roundingBorderWidth="2px" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:src="@mipmap/add_icon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_remove2"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:visibility="gone"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/ic_cancel" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/img_lyt_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_whats_name">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img3"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:placeholderImage="@color/white_color"
+                app:roundedCornerRadius="@dimen/_20sdp"
+                app:roundingBorderColor="@color/black_color"
+                app:roundingBorderWidth="2px" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/img_add3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:src="@mipmap/add_icon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_remove3"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="end|bottom"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/ic_cancel" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/img_lyt_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_whats_name">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/img4"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:placeholderImage="@color/white_color"
+                app:roundedCornerRadius="@dimen/_20sdp"
+                app:roundingBorderColor="@color/black_color"
+                app:roundingBorderWidth="2px" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_add4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:src="@mipmap/add_icon" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_remove4"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="end|bottom"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/ic_cancel" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <!--   <androidx.appcompat.widget.AppCompatImageView
+           android:id="@+id/img_logo"
+           android:layout_width="@dimen/_300sdp"
+           android:layout_height="@dimen/_60sdp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_whats_name" />-->
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pictures_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/rounded_yellow"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:paddingStart="@dimen/_30sdp"
+        android:textSize="20sp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:text="@string/continues"
+        android:textColor="@color/black_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linr_lyt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

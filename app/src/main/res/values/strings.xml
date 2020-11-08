@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">SocialNetwork</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_account">Create an account</string>
+    <string name="go_directly_to_the_application">Go directly to the application</string>
+    <string name="what_is_your_name">What is your name?</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="continues">Continue</string>
+    <string name="what_is_your_date_of_birthday">What is your date of\nbirthday ?</string>
+    <string name="date_of_birthaday">Date of birthday</string>
+    <string name="create_a_password">Create a password</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_your_mobile_number">Enter your mobile\nnumber</string>
+    <string name="verification_code_sent">A verification code will be sent to you by SMS</string>
+    <string name="enter_the_confirmation_code">Enter the confirmation\ncode</string>
+    <string name="code">Code</string>
+    <string name="validate">Validate</string>
+    <string name="connection">Connection</string>
+    <string name="user_name">User name</string>
+    <string name="set_connector">Se Connecter</string>
+    <string name="what_is_your_school">What is your school ?</string>
+    <string name="indicate_your_school">Indicate your school</string>
+    <string name="schools">Schools</string>
+    <string name="school_1">School 1</string>
+    <string name="for_alumni">For Alumni</string>
+    <string name="description">Description</string>
+    <string name="choose_a_description">Choose a description</string>
+    <string name="proposals">Proposals</string>
+    <string name="text1">Hi everybody ! I’m a student at…, nice to meet you 
+I hope to meet new people and share activities
+Here to discover and why not share together
+Curious to meet new people in the community
+</string>
+    <string name="add_pictures">Add Pictures</string>
+    <string name="enter_first_name">Please enter first name</string>
+    <string name="enter_last_name">Please enter last name</string>
+    <string name="select_bday">Please select date of birth</string>
+    <string name="indicate_school">Please indicate your school</string>
+    <string name="enter_description">Please enter description</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_mobile_no">Please enter mobile number</string>
+    <string name="enter_verification_code">Please enter verification code</string>
+    <string name="enter_user_name">Please enter user name</string>
+    <string name="community">Community</string>
+    <string name="chat">Chat</string>
+    <string name="activities">Activities</string>
+    <string name="service">Service</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="new_members">New Members</string>
+    <string name="school_name">School Name</string>
+    <string name="every_can_message">Every can message</string>
+    <string name="refrences">References</string>
+    <string name="most_mentioned">Most Mentioned</string>
+    <string name="need_help">Are there people in first grade who have to do a quiz in english? I need help please</string>
+    <string name="topic">Topic</string>
+    <string name="opinion_optional">Add a video and give\nyour opinion(Optional)</string>
+    <string name="take_a_video">Take A Video</string>
+    <string name="check_internet_connection">Please check your internet connection</string>
+    <string name="need_storage_permission">Storage Permission required for better User Experience</string>
+    <string name="need_camera_permission">Camera permission required for better User Experience</string>
+    <string name="need_Location_permission">Location Permission required for better User Experience</string>
+    <string name="select_image_order">Please select image in order</string>
+    <string name="selct_one_imageP">Please select atleast one image</string>
+    <string name="selct_one_image">Please select one image</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="enter_valid_code">Please enter valid confirmation code</string>
+    <string name="see_more">See More</string>
+    <string name="API_KEY">AIzaSyA_ola69gOK_rY9sV1zR69SFm6iclkENk0</string>
+    <string name="user_id">user_id</string>
+    <string name="video_length_validation_max">Video should be of minimum 60 seconds</string>
+    <string name="what_topic_do_you_want_to_talk_about">What topic do you\nwant to talk about?</string>
+    <string name="enter_topic_name">Please enter topic name</string>
+</resources>

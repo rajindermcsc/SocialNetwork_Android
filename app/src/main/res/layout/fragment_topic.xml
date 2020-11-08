@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.landing.LandingFragment">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_whats_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:gravity="center"
+        android:text="@string/what_topic_do_you_want_to_talk_about"
+        android:textColor="@color/black_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_whats_name" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="@null"
+        android:hint="@string/topic"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/_15sdp"
+        android:singleLine="true"
+        android:textColor="@color/black_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_validate_code"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <View
+        android:id="@+id/view_topic"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="@color/view_color"
+        app:layout_constraintTop_toBottomOf="@+id/et_topic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_validate_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/rounded_green_2"
+        android:gravity="center"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/continues"
+        android:textColor="@color/white_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_topic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
